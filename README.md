@@ -3,6 +3,10 @@ This is the shared MATLAB GUI package to retrieve a frequency-resolved optical g
 
 It is based on Pavel's "Ptychographic reconstruction algorithm" [[1]](#references-our-papers).
 
+> [!NOTE]
+> If your group uses other commercial FROG softwares and would like this code to load it, rather than modifying it yourself, feel free to send me your FROG trace (the raw data one) and let me know which company you're using. I'm happy to extend its capabilities. It's cool to make this software be super comprehensive including all FROG companies outputs in the world. I hope that it can help everyone in the world who uses a FROG.
+> In principle, I can do the same for loading indepenedently-measured spectrum, but there are too many possiblities of spectrometer/OSA companies and products, and thus too many formats. It's better to use the customized function in this code and write your own loading function. I cannot cover all of them. In contrast, there are a limited number of FROG companies and products I think.
+
 ## Motivation
 Most of the time, outputs from the commercial VideoFROG are good enough. However, due to VideoFROG's inherent constraint of limited sampling points in retrieval, it cannot retrieve a highly-chirped broadband pulse when it requires both huge time and frequency windows. Limited sampling points during retrieval mean that a larger frequency window is accompanied by a smaller time window. The measured FROG trace still contains all information. I was forced to write my own code to do the retrieval when I was attempting to measure the chirped pulse from a Mamyshev oscillator, which covers an ultrabroadband 1000-1150 nm with a long ~5-ps duration.
 
@@ -19,7 +23,6 @@ Additionally, VideoFROG's retrieved pulse doesn't center its pulse in frequency 
 5. The number of sampling points required for retrieval is automatically determined from the user-defined time window for the retrieved pulse and the bandwidth information obtained from the FROG trace.
 6. FROG trace is automatically re-sampled with different numbers of sampling points in frequency and delay (my initial motivation to make this code to measure a chirped pulse, mentioned above).
 7. Export with MATLAB's `mat` file.
-
 
 ## References (papers):
 1. [Ptychography](https://doi.org/10.1364/OPTICA.3.001320)
