@@ -47,8 +47,9 @@ Source: "Examples/linear Mamyshev oscillator"
 [MO operation video](https://github.com/user-attachments/assets/112d2d25-28be-458b-96ed-bf5af5fee714)
 
 - **ANDi**  
-This is the dechirped pulse of an all-normal-dispersion (ANDi) laser I measured in my early stage of PhD, so the pulse quality isn't very good with only 0.5 Strehl ratio. It's a good demonstration here though.  
+This is the dechirped pulse of an all-normal-dispersion (ANDi) laser I measured in my early stage of PhD, so the pulse quality isn't awesome with 0.66 Strehl ratio. Since delay marginal is autocorrelation, it's a good demonstration here to show that pulses with a decently-low Strehl ratio can still have a very sharp autocorrelation, which depends on how the pedestal coexists with the main pulse. If the pedestal spreads out picosecond long, the autocorrelation still looks good, but the Strehl ratio is pretty bad. After I learned this, I realized that FROG is crucial in pulse measurement, and autocorrelation is misleading. Therefore, be careful when reading papers with autocorrelations; some of them claimed that they had a good pulse, but after thinking carefully, their process should have strong uncompensated higher-order phases for example. 0.6 Strehl ratio is sometimes considered OK, but lower than 0.5 is unacceptable, which we cannot realize by a simple autocorrelation measurement. Again, FROG measurement is crucial!   
 Source: "Examples/ANDi"  
+<img src="Readme_images/ANDi_Strehl_ratio.jpg" width=45%><img src="Readme_images/ANDi_delay_marginals.jpg" width=45%>
 
 [ANDi operation video](https://github.com/user-attachments/assets/9117af11-87e3-4fd7-a2d8-b5141aebeb92)
 
