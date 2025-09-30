@@ -1,0 +1,1 @@
+Use "Thorlabs (log)" to load this measured spectra here.
