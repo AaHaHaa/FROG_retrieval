@@ -5,6 +5,7 @@ It is based on Pavel's "Ptychographic reconstruction algorithm" [[1]](#reference
 
 > [!NOTE]
 > If your group uses other commercial FROG softwares and would like this code to load it, rather than modifying it yourself, feel free to send me your FROG trace (the raw data one) and let me know which company you're using. I'm happy to extend its capabilities. It's cool to make this software be super comprehensive including all FROG companies outputs in the world. I hope that it can help everyone in the world who uses a FROG.
+> 
 > In principle, I can do the same for loading indepenedently-measured spectrum, but there are too many possiblities of spectrometer/OSA companies and products, and thus too many formats. It's better to use the customized function in this code and write your own loading function. I cannot cover all of them. In contrast, there are a limited number of FROG companies and products I think.
 
 ## Motivation
