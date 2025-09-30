@@ -32,7 +32,7 @@ The pulse from a commercial laser, PHAROS, LightConversion, is nonlinearly compr
 Source: "Examples/PLKM compressed pulse"  
 <img src="Readme_images/PLKM_measuredFROGtrace.jpg" width=45%><img src="Readme_images/PLKM_reconstructedFROGtrace.jpg" width=45%>
 <img src="Readme_images/PLKM_frequency_marginals.jpg" width=45%><img src="Readme_images/PLKM_delay_marginals.jpg" width=45%>
-<img src="Readme_images/PLKM_Compare_spectra.jpg" width=45%>
+<img src="Readme_images/PLKM_Strehl_ratio.jpg" width=45%><img src="Readme_images/PLKM_Compare_spectra.jpg" width=45%>
 
 [PLKM operation video](https://github.com/user-attachments/assets/e554b2b8-9773-4536-96f5-c99f00d38e42)
 
