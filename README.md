@@ -1,12 +1,12 @@
 # FROG retrieval
-This is the shared GUI package to retrieve a frequency-resolved optical gating (FROG) trace and obtain the retrieved field. It currently read the `raw` file exported by VideoFROG from [Mesaphotonics](https://mesaphotonics.com/), but, in principle, users can easily extend its capability by modifying `readRawFROG.m` function.
+This is the shared MATLAB GUI package to retrieve a frequency-resolved optical gating (FROG) trace and obtain the retrieved field. It currently reads the `raw` file exported by VideoFROG from [Mesaphotonics](https://mesaphotonics.com/), but, in principle, users can easily extend its capability by modifying `readRawFROG.m` function.
 
 It is based on Pavel's "Ptychographic reconstruction algorithm" [[1]](#references-our-papers).
 
 ## Motivation
-Most of the time, outputs from the commercial VideoFROG are good enough. However, due to VideoFROG's inherent constraint of limited sampling points in retrieval, it cannot retrieve a highly-chirped broadband pulse when it requires both huge time and frequency windows. Limited sampling points during retrieval mean that a larger frequency window is accompanied by a smaller time window. The measured FROG trace still contains all information. I was forced to write my own code to do the retrieval when I was attempting to measure the chirped pulse from a Mamyshev oscillator, which covers an ultrabroadband 1000-1150 nm with ~5-ps duration.
+Most of the time, outputs from the commercial VideoFROG are good enough. However, due to VideoFROG's inherent constraint of limited sampling points in retrieval, it cannot retrieve a highly-chirped broadband pulse when it requires both huge time and frequency windows. Limited sampling points during retrieval mean that a larger frequency window is accompanied by a smaller time window. The measured FROG trace still contains all information. I was forced to write my own code to do the retrieval when I was attempting to measure the chirped pulse from a Mamyshev oscillator, which covers an ultrabroadband 1000-1150 nm with a long ~5-ps duration.
 
-Additionally, VideoFROG's retrieved pulse doesn't center its pulse in frequency according to the measured FROG trace that should have all information, but to the user-defined `center wavelength` that a user can arbitrarily set (it has a box for this input). This makes no sense to me, so I made this code to correct this mistake. Furthermore, I added an extra capability such that it can load independently-measured spectrum for extra calibration to check FROG's accuracy, in case there is misalignment or "omission to align at the correct time center" (this happens a lot to newbies).
+Additionally, VideoFROG's retrieved pulse doesn't center its pulse in frequency according to the measured FROG trace that should have all information, but to the user-defined `center wavelength` that a user can arbitrarily set (it has a box for this input). This makes no sense to me, so I made this code to correct this mistake. Furthermore, I added an extra capability such that it can load an independently-measured spectrum for extra calibration to check FROG's accuracy, in case there is misalignment or "omission to align at the correct time center" (this happens a lot to newbies).
 
 ## Capabilities:
 1. Retrieve FROG trace with user-defined personalized controls, free from commercial softwares.
@@ -33,17 +33,17 @@ Source: "Examples/PLKM compressed pulse"
 <img src="Readme_images/PLKM_measuredFROGtrace.jpg" width=45%><img src="Readme_images/PLKM_reconstructedFROGtrace.jpg" width=45%>
 <img src="Readme_images/PLKM_frequency_marginals.jpg" width=45%><img src="Readme_images/PLKM_delay_marginals.jpg" width=45%>
 <img src="Readme_images/PLKM_Compare_spectra.jpg" width=45%>  
-<img src="Readme_images/PLKM.avi" width=90%>
+https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/PLKM.mp4
 
 - **Mamyshev oscillator**  
 The chirped pulse directly from a Mamyshev oscillator [[3]](#references-our-papers). This is beyond the capability of the commercial VideoFROG.  
 Source: "Examples/linear Mamyshev oscillator"  
-<img src="Readme_images/MO.avi" width=90%>
+https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/MO.mp4
 
 - **ANDi**  
-This is the dechirped pulse an all-normal-dispersion (ANDi) laser I measured in my early stage of PhD, so the pulse quality isn't very good with 0.5 Strehl ratio. It's a good demonstration here though.  
+This is the dechirped pulse of an all-normal-dispersion (ANDi) laser I measured in my early stage of PhD, so the pulse quality isn't very good with only 0.5 Strehl ratio. It's a good demonstration here though.  
 Source: "Examples/ANDi"  
-<img src="Readme_images/ANDi.avi" width=90%>
+https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/ANDi.mp4
 
 ## Notes:
 I have written `Instruction.doc`. Please find details of how to use this package in it.
