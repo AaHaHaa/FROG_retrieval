@@ -33,19 +33,17 @@ Source: "Examples/PLKM compressed pulse"
 <img src="Readme_images/PLKM_measuredFROGtrace.jpg" width=45%><img src="Readme_images/PLKM_reconstructedFROGtrace.jpg" width=45%>
 <img src="Readme_images/PLKM_frequency_marginals.jpg" width=45%><img src="Readme_images/PLKM_delay_marginals.jpg" width=45%>
 <img src="Readme_images/PLKM_Compare_spectra.jpg" width=45%>  
-https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/PLKM.mp4
+https://github.com/user-attachments/assets/e554b2b8-9773-4536-96f5-c99f00d38e42
 
 - **Mamyshev oscillator**  
 The chirped pulse directly from a Mamyshev oscillator [[3]](#references-our-papers). This is beyond the capability of the commercial VideoFROG.  
 Source: "Examples/linear Mamyshev oscillator"  
-
-https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/MO.mp4
+https://github.com/user-attachments/assets/112d2d25-28be-458b-96ed-bf5af5fee714
 
 - **ANDi**  
 This is the dechirped pulse of an all-normal-dispersion (ANDi) laser I measured in my early stage of PhD, so the pulse quality isn't very good with only 0.5 Strehl ratio. It's a good demonstration here though.  
 Source: "Examples/ANDi"  
-
-https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/ANDi.mp4
+https://github.com/user-attachments/assets/9117af11-87e3-4fd7-a2d8-b5141aebeb92
 
 ## Notes:
 I have written `Instruction.doc`. Please find details of how to use this package in it.
