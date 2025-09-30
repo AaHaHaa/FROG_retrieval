@@ -38,11 +38,13 @@ https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/PLKM.mp4
 - **Mamyshev oscillator**  
 The chirped pulse directly from a Mamyshev oscillator [[3]](#references-our-papers). This is beyond the capability of the commercial VideoFROG.  
 Source: "Examples/linear Mamyshev oscillator"  
+
 https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/MO.mp4
 
 - **ANDi**  
 This is the dechirped pulse of an all-normal-dispersion (ANDi) laser I measured in my early stage of PhD, so the pulse quality isn't very good with only 0.5 Strehl ratio. It's a good demonstration here though.  
 Source: "Examples/ANDi"  
+
 https://github.com/AaHaHaa/FROG_retrieval/tree/main/Readme_images/ANDi.mp4
 
 ## Notes:
